@@ -3,7 +3,7 @@ export const preConfigContent = `
 const CUSTOM_API_KEY = process.env.CUSTOM_API_KEY;
 `;
 
-export const configOverride = {
+export const configOverrides = {
   networks: {
     hardhat: {
       forking: {
@@ -12,11 +12,12 @@ export const configOverride = {
     },
     customNetwork: {
       url: "https://custom.network",
-      accounts: [deployerPrivateKey],
+      accounts: ["$$$deployerPrivateKey"],
+      blah: `test \${CUSTOM_API_KEY}`,
       verify: {
         etherscan: {
           apiUrl: "https://api.custom-explorer.io",
-          apiKey: etherscanApiKey,
+          apiKey: "$$$etherscanApiKey",
         }
       }
     }
