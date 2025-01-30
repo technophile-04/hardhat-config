@@ -12,7 +12,7 @@ export const configOverrides = {
     },
     customNetwork: {
       url: "https://custom.network",
-      accounts: ["shelll $$$deployerPrivateKey$$$"],
+      accounts: ["$$$deployerPrivateKey$$$"],
       blah: `test \${CUSTOM_API_KEY}`,
       verify: {
         etherscan: {
