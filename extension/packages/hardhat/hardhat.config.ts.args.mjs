@@ -12,12 +12,12 @@ export const configOverrides = {
     },
     customNetwork: {
       url: "https://custom.network",
-      accounts: ["$$$deployerPrivateKey$$$"],
+      accounts: ["$$deployerPrivateKey$$"],
       blah: `test \${CUSTOM_API_KEY}`,
       verify: {
         etherscan: {
           apiUrl: "https://api.custom-explorer.io",
-          apiKey: "$$$etherscanApiKey$$$",
+          apiKey: "$$etherscanApiKey$$",
         }
       }
     }
